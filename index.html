@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>App thanh toán</title>
+    <script rel="preload" as="script" crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
+</head>
+<body>
+    <div class="logo">
+        <img src="./img/logo-kfc-png.png" alt="LOGO KFC" width="200px" height="150px">
+    </div>
+    <div class="order">
+        <h1>Your order from KFC</h1>
+        <ul id="order-items">
+        </ul>
+        <button id="btn-add">Add food</button>
+        <div id="menukfc">
+            <div class="menu">
+                <div><input type="checkbox" id="kfc"> <label for="">Gà KFC</label></div>
+                <div><input type="checkbox" id="kfccay"> <label for="">Gà KFC cay</label></div>
+                <div><input type="checkbox" id="coca"> <label for="">Coca</label></div>
+                <div><input type="checkbox" id="hotdog"> <label for="">Hotdog</label></div>
+                <div><input type="checkbox" id="gaquay"> <label for="">Gà quay</label></div>
+                <div><input type="checkbox" id="hamburger"> <label for="">Hamburger</label></div>
+                <div><input type="checkbox" id="pepsi"> <label for="">Pepsi</label></div>
+                <div><input type="checkbox" id="khoai"> <label for="">Khoai tây chiên</label></div>                                            
+            </div>
+        </div>
+        
+        <div class="order-sum">
+            <p>Subtotal <span id="subtotal" class="money">$0</span></p>
+            <p>Shipping <span id="shipping" class="money">$2</span></p>
+            <p>Total <span id="total" class="money">$2</span></p>
+        </div>
+        <button id="btn-checkout">Check out</button>
+    </div>
+    <script src="./helper.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
